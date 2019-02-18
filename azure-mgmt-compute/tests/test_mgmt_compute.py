@@ -402,6 +402,7 @@ class MgmtComputeTest(AzureMgmtTestCase):
                         type_name,
                         version,
                     )
+                    self.assertGreater(len(result_get), 0)
                     return
 
     def test_vm_images(self):
